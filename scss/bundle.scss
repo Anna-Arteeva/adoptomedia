@@ -1,0 +1,38 @@
+/*
+sass --watch scss/home_2_0/bundle.scss:dist/css/home.css
+*/
+
+//Variables
+@import 'variables/variables';
+
+//MIXINS
+@import 'mixins/mixins';
+
+@import 'normalize';
+@import 'body';
+
+
+//elements
+@import "elements/icons";
+@import "elements/button";
+
+
+@import 'typography';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/sections';
+@import 'elements/icons';
+
+//Home
+@import 'components/hero';
+@import 'components/main-points';
+@import 'components/image-section';
+@import 'components/centered-section';
+@import 'components/testimonial';
+@import 'components/contact-section';
+
+
+/*
+@import '';
+ */
+

@@ -1,0 +1,25 @@
+//TODO remove
+  $color-brand: #3EB5E6;
+  $color-brand-variation: #33CCFF;
+  $color-base: #032A50;
+  $color-base-light: rgba($color-base, .75);//#546068;
+  $color-muted: rgba($color-base, 0.6);
+  $color-outline: rgba(#C9CCCF, 0.9);
+  $color-back: rgba(#C9CCCF, 0.2);;
+  $white: #ffffff;
+  $color-red: #FF3366;
+  $color-yellow: #FFB400;
+
+:root {
+  // Colors
+  --color-brand:           $color-brand;
+  --color-brand-variation: $color-brand-variation;
+  --color-red:             $color-red;
+  --color-yellow:          $color-yellow;
+
+  // Gray
+  --color-base:            $color-base;
+  --color-muted:           $color-muted;
+  --color-outline:         $color-outline;
+  --color-back:            $color-back;
+}
