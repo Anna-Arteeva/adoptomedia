@@ -27,7 +27,7 @@
   background-color: $color-back;
   @extend .section;
 
-  @include for-tablet-portrait-up {
+  @include for-desktop-up {
     border-radius: $border-radius-lg;
   }
 }

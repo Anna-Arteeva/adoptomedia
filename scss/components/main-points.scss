@@ -3,14 +3,14 @@
   max-width: 80rem;
   display: flex;
 
-  @include for-tablet-portrait-up {
+  @include for-tablet-landscape-up {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0 1rem;
     margin: $padding-v auto;
   }
 
-  @include for-tablet-portrait-down {
+  @include for-tablet-landscape-down {
     flex-direction: column;
   }
 }
@@ -30,7 +30,7 @@
     }
   }
 
-  @include for-tablet-portrait-down {
+  @include for-tablet-landscape-down {
     padding: .5rem 1.5rem 0 1.5rem;
     display: flex;
     align-items: flex-start;
@@ -45,7 +45,6 @@
 }
 
 .main-points--icon {
-
   @include for-tablet-landscape-up {
     position: absolute;
     top: -1.5rem;

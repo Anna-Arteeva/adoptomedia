@@ -101,18 +101,22 @@
     flex-direction: column;
   }
 
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     //TODO test it
     align-items: center;
   }
 }
 
 .pic-left--section {
-  @include for-desktop-up  {
-    margin-left: 3rem;
+  @include for-tablet-landscape-up  {
     flex-direction: row-reverse;
     justify-content: flex-end;
-
+  }
+}
+.pic-left--section {
+  @include for-tablet-landscape-up  {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 }
 
@@ -128,13 +132,13 @@
 }
 
 .pic-left--content {
-  @include for-desktop-up  {
+  @include for-tablet-landscape-up  {
     margin-left: $padding-h;
   }
 }
 
 .pic-right--content {
-  @include for-desktop-up  {
+  @include for-tablet-landscape-up  {
     margin-right: $padding-h;
   }
 }

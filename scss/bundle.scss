@@ -8,20 +8,21 @@ sass --watch scss/home_2_0/bundle.scss:dist/css/home.css
 //MIXINS
 @import 'mixins/mixins';
 
-@import 'normalize';
-@import 'body';
+@import 'base/normalize';
+@import 'base/body';
 
 
 //elements
-@import "elements/icons";
-@import "elements/button";
+@import 'base/typography';
+@import "base/icons";
+@import "base/button";
+@import "base/_Form";
+@import 'base/icons';
 
 
-@import 'typography';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/sections';
-@import 'elements/icons';
 
 //Home
 @import 'components/hero';
