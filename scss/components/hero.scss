@@ -8,15 +8,35 @@
   padding: 1rem;
   position: relative;
 
-  background-image: url("../../img/home/hero-section.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  @media (orientation: portrait) {
+    min-height: calc(100vh - 8rem);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+
+    background-image: url("../../img/home/hero-section.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media (orientation: portrait) {
+      background-image: url("../../img/home/hero-section-portrait.svg");
+    }
+  }
 }
 
 .home--hero--content {
   max-width: 60rem; //limits the size of the container
   min-width: 50vw;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-back {

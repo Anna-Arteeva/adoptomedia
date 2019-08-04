@@ -381,7 +381,8 @@ h6, .h6 {
 
 .subtitle {
   color: #3EB5E6;
-  font-family: "Indie Flower", cursive; }
+  font-family: "Indie Flower", cursive;
+  margin-top: .5em; }
 
 hr {
   margin-top: 0.5em;
@@ -754,15 +755,31 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 1rem;
-  position: relative;
-  background-image: url("../../img/home/hero-section.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  position: relative; }
+  @media (orientation: portrait) {
+    .home--hero {
+      min-height: calc(100vh - 8rem); } }
+  .home--hero:before {
+    content: '';
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-image: url("../../img/home/hero-section.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    @media (orientation: portrait) {
+      .home--hero:before {
+        background-image: url("../../img/home/hero-section-portrait.svg"); } }
 
 .home--hero--content {
   max-width: 60rem;
-  min-width: 50vw; }
+  min-width: 50vw;
+  position: relative;
+  z-index: 1; }
 
 .hero-back {
   position: absolute;
@@ -816,6 +833,12 @@ footer {
 
 .main-points--title {
   font-size: calc(1rem + ((1vw - 4.8px) * 0.5556)); }
+
+.main-points-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 40rem;
+  margin: auto; }
 
 .screenshot-wrapper {
   position: relative;

@@ -20,7 +20,7 @@ $big-desktop:       1800px;
   @media (max-width: $phone) { @content; }
 }
 @mixin for-tablet-portrait-up {
-  @media (min-width: $tablet-portrait) { @content; }
+  @media (min-width: $tablet-portrait)  { @content; }
 }
 @mixin for-tablet-landscape-up {
   @media (min-width: $tablet-landscape) { @content; }
