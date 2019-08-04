@@ -1,6 +1,6 @@
 .home--hero {
   display: flex;
-  min-height: calc(100vh - 12rem);
+  min-height: calc(100vh - 10rem);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -21,13 +21,14 @@
     bottom: 0;
     z-index: 0;
 
-    background-image: url("../../img/home/hero-section.svg");
+    background-image:    url("../../img/home/hero-section.svg");
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size:     contain;
+    background-repeat:   no-repeat;
 
     @media (orientation: portrait) {
-      background-image: url("../../img/home/hero-section-portrait.svg");
+      background-image:  url("../../img/home/hero-section-portrait.svg");
+      bottom:            1rem;
     }
   }
 }

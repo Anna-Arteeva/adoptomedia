@@ -14,7 +14,7 @@
 
 .section {
   @extend .section-breakpoints;
-  padding:          $section-padding-v-sm  $section-width-sides-desktop;
+  padding:          $section-padding-v  $section-width-sides-desktop;
   position:         relative;
 }
 

@@ -48,6 +48,11 @@ h6, .h6 { font-size: $h6-font-size; }
   font-weight: $display2-weight;
   margin-top: .2em;
 }
+.display-3 {
+  font-size: $display3-size;
+  font-weight: $display3-weight;
+  margin-top: .2em;
+}
 
 .subtitle {
   color: $color-brand;

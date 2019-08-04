@@ -52,9 +52,9 @@ $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 
-$display1-size:               calc(2rem + ((1vw - 4.8px) * 2.2222)) !default;
-$display2-size:               calc(1.625rem + ((1vw - 4.8px) * 1.9444)) !default;
-$display3-size:               calc(1.4rem + ((1vw - 4.8px) * 1.8)) !default;
+$display1-size:               calc(2rem + ((1vw - 4.8px) * 2.2222));
+$display2-size:               calc(1.625rem + ((1vw - 4.8px) * 1.9444));
+$display3-size:               calc(1.125rem + ((1vw - 4.8px) * 1.1111)); //18 to 34
 $display4-size:               3.5rem !default;
 
 $display1-weight:             600 !default;
