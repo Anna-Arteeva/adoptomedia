@@ -866,6 +866,7 @@ footer {
 
 .screenshot {
   max-width: 100%;
+  height: auto;
   border-radius: 0.2rem;
   border: 4px solid rgba(237, 240, 244, 0.4); }
   .screenshot:not(:last-of-type) {
