@@ -8,10 +8,6 @@
   padding: 1rem;
   position: relative;
 
-  @media (orientation: portrait) {
-    min-height: calc(100vh - 8rem);
-  }
-
   &:before {
     content: '';
     position: absolute;
@@ -29,8 +25,11 @@
     @media (orientation: portrait) {
       background-image:  url("../../img/home/hero-section-portrait.svg");
       bottom:            1rem;
-
       top: 0;
+    }
+
+    @include for-phone-only {
+      background-image: url("../../img/home/hero-section-phone.svg");
     }
   }
 }

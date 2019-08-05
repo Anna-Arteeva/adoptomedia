@@ -3,13 +3,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:          $section-padding-v-xs  $section-width-sides-desktop;
+  padding: $section-padding-v-xs $section-width-sides-desktop;
+  position: relative;
+  z-index: 10;
 
   @include for-tablet-portrait-down {
     flex-direction: column;
   }
-}
 
+  @include for-phone-only {
+    padding-bottom: 0;
+  }
+}
 
 .header--logo {
   padding-top: 11px;
@@ -24,11 +29,6 @@
 .header-right {
   display: flex;
   justify-content: flex-end;
-
-  @include for-tablet-portrait-down {
-    max-width: 94vw;
-    overflow: scroll;
-  }
 }
 
 .header--nav {
@@ -39,8 +39,7 @@
   flex-wrap: wrap;
   white-space: nowrap;
 
-  @include for-phone-only {
-  }
+  &:last-child { margin-right: 0; }
 }
 
 .header--link {
@@ -54,7 +53,6 @@
   padding-bottom: 24px;
   font-size: 1rem;
 
-  &:last-of-type { margin-right: 0; }
 
   @include for-phone-only {
     font-size: .9em;

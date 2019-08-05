@@ -1,18 +1,8 @@
-.testimonial {
-  position: relative;
-
-  @include for-tablet-portrait-up {
-    &.testimonial--inactive {
-      opacity: .5;
-    }
-  }
-
-  @include for-phone-only {
-    margin: 2rem 1rem;
-  }
+.quote-section {
+  @extend .centered-section;
 }
 
-.testimonial-body {
+.quote-body {
   @extend .lead;
   font-style: italic;
   color: $color-brand;
@@ -20,12 +10,12 @@
   font-weight: lighter;
 }
 
-.testimonial-author {
+.quote-author {
   color: $color-brand;
   font-size: calc(0.9rem + ((1vw - 0.3rem) * 0.2222));
 }
 
-.testimonial-logo {
+.quote-logo {
   width: 5rem;
   height: 2.5rem;
   margin-bottom: 1.5rem;

@@ -48,13 +48,13 @@ $h6-font-size:                calc(1rem + ((1vw - 4.8px) * 0.1389)) !default;
 
 $headings-margin-bottom:      .5em !default;
 $headings-font-family:        $font-family-base !default;
-$headings-font-weight:        500 !default;
+$headings-font-weight:        bold;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 
-$display1-size:               calc(2rem + ((1vw - 4.8px) * 2.2222));
+$display1-size:               calc(1.375rem + ((1vw - 4.8px) * 3.6111)); // 20 to 72
 $display2-size:               calc(1.625rem + ((1vw - 4.8px) * 1.9444));
-$display3-size:               calc(1.125rem + ((1vw - 4.8px) * 1.1111)); //18 to 34
+$display3-size:               calc(1.125rem + ((1vw - 4.8px) * 1.1111)); // 18 to 34
 $display4-size:               3.5rem !default;
 
 $display1-weight:             600 !default;
