@@ -118,3 +118,48 @@ mark,
 .text-centered {
   text-align: center;
 }
+
+
+.sketch-underline {
+  position: relative;
+  white-space: nowrap;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-underline {
+  @extend .sketch-underline;
+
+  &:before {
+    bottom: -2.5rem;
+    height: 3rem;
+    left: -1em;
+    right: 0;
+    background-image: url("../../img/home/hero-underline.svg");
+  }
+}
+
+.underline-1 {
+  @extend .sketch-underline;
+
+  &:before {
+    bottom: -3rem;
+    height: 3rem;
+    left: -.5em;
+    right: .5em;
+    background-image: url("../../img/home/underline.svg");
+  }
+}
+
+.underline-2 {
+  @extend .underline-1;
+
+  &:before {
+    background-image: url("../../img/home/underline-2.svg");
+  }
+}

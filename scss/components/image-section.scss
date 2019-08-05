@@ -1,8 +1,7 @@
 .screenshot-wrapper {
   //shadow
-  position:relative;
+  position: relative;
   background: #fff;
-  display: flex;
 
   &:before {
     content:"";
@@ -30,6 +29,7 @@
 .screenshot {
   max-width: 100%;
   height: auto;
+  display: block;
   border-radius: $border-radius;
   border: 4px solid rgba($color-outline, .4);
 
