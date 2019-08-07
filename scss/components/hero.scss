@@ -8,6 +8,8 @@
   padding: 1rem;
   position: relative;
 
+  @include for-big-desktop-up { margin-bottom: 5vh; }
+
   &:before {
     content: '';
     position: absolute;

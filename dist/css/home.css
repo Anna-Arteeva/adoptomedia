@@ -424,6 +424,9 @@ mark,
 .text-centered {
   text-align: center; }
 
+.text-justify {
+  text-align: justify; }
+
 .sketch-underline, .hero-underline, .underline-1, .underline-2 {
   position: relative;
   white-space: nowrap; }
@@ -441,14 +444,25 @@ mark,
   background-image: url("../../img/home/hero-underline.svg"); }
 
 .underline-1:before, .underline-2:before {
-  bottom: -3rem;
+  bottom: -2.6rem;
   height: 3rem;
-  left: -.5em;
-  right: .5em;
+  left: -.2em;
+  right: .1em;
   background-image: url("../../img/home/underline.svg"); }
 
 .underline-2:before {
   background-image: url("../../img/home/underline-2.svg"); }
+
+ol {
+  padding-left: 1em; }
+  ol li {
+    padding-left: .5em; }
+
+ul {
+  list-style-type: square; }
+  ul li {
+    padding-left: .5em;
+    margin-bottom: .7em; }
 
 .icon-front-text svg {
   display: inline-block;
@@ -471,7 +485,7 @@ input[type='submit'] {
   cursor: pointer;
   display: inline-block;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 500;
   height: 3.8rem;
   line-height: 3.8rem;
   padding: 0 3rem;
@@ -792,18 +806,18 @@ footer {
 .footer-link {
   color: rgba(3, 42, 80, 0.7); }
 
-.section-breakpoints, .header, .section, footer, .section-back, .dark-section, .home-testimonial, .centered-section, .quote-section {
+.section-breakpoints, .header, .section, footer, .section-back, .dark-section, .main-points, .home-testimonial, .centered-section, .quote-section {
   margin-left: auto;
   margin-right: auto; }
   @media (min-width: 1200px) {
-    .section-breakpoints, .header, .section, footer, .section-back, .dark-section, .home-testimonial, .centered-section, .quote-section {
+    .section-breakpoints, .header, .section, footer, .section-back, .dark-section, .main-points, .home-testimonial, .centered-section, .quote-section {
       width: calc(100% - 6vw);
       max-width: 100rem; } }
   @media (max-width: calc(600px - 1px)) {
-    .section-breakpoints, .header, .section, footer, .section-back, .dark-section, .home-testimonial, .centered-section, .quote-section {
+    .section-breakpoints, .header, .section, footer, .section-back, .dark-section, .main-points, .home-testimonial, .centered-section, .quote-section {
       width: 100vw; } }
 
-.section, footer, .section-back, .dark-section, .home-testimonial, .centered-section, .quote-section {
+.section, footer, .section-back, .dark-section, .main-points, .home-testimonial, .centered-section, .quote-section {
   padding: calc(6vh) 3vw;
   position: relative; }
 
@@ -830,6 +844,9 @@ footer {
   text-align: center;
   padding: 1rem;
   position: relative; }
+  @media (min-width: 1800px) {
+    .home--hero {
+      margin-bottom: 5vh; } }
   .home--hero:before {
     content: '';
     position: absolute;
@@ -869,29 +886,27 @@ footer {
 
 .main-points {
   width: 100%;
-  max-width: 80rem;
-  display: flex; }
-  @media (min-width: 900px) {
-    .main-points {
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 0 1rem;
-      margin: calc(5vh + (3.4 * (1vw - 2px))) auto; } }
-  @media (max-width: calc(900px - 1px)) {
-    .main-points {
-      flex-direction: column; } }
+  max-width: 80rem; }
+  .main-points > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem; }
+    @media (max-width: calc(900px - 1px)) {
+      .main-points > div {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr; } }
+    @media (max-width: 599px) {
+      .main-points > div {
+        margin-left: -.5rem;
+        margin-right: -.5rem; } }
 
 .main-points--blocks {
   background: #F2F5F8;
   position: relative; }
   @media (min-width: 900px) {
     .main-points--blocks {
-      width: calc(100% / 4 - 1rem);
-      margin-left: .75rem;
       padding: 1.5rem;
-      border-radius: 0.6rem; }
-      .main-points--blocks:first-child {
-        margin-left: 0; } }
+      border-radius: 0.6rem; } }
   @media (max-width: calc(900px - 1px)) {
     .main-points--blocks {
       padding: .5rem 1.5rem 0 1.5rem;
@@ -909,6 +924,10 @@ footer {
 @media (max-width: calc(900px - 1px)) {
   .main-points--icon {
     margin: 1rem 1rem 0 0; } }
+@media (max-width: 599px) {
+  .main-points--icon {
+    width: 2rem;
+    margin-left: -.5rem; } }
 
 .main-points--title {
   font-size: calc(1.125rem + ((1vw - 4.8px) * 0.8333)); }
