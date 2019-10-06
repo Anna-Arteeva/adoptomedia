@@ -10,14 +10,11 @@
   left: -3rem;
   position: absolute;
   background-color: white;
- // width: 4rem;
   box-shadow: $box-shadow;
   padding: 1rem;
   z-index: 2;
   border-bottom-left-radius:  $border-radius;
   border-bottom-right-radius: $border-radius;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .dropdown:hover .dropdown-content {

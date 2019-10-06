@@ -31,7 +31,6 @@ $text-length-sm:          20vw;
     }
   }
 
-
   @include for-tablet-portrait-down {
     display: block;
   }
@@ -83,7 +82,6 @@ $text-length-sm:          20vw;
   @include for-tablet-portrait-down {
    margin-bottom: 1.3rem;
   }
-
 }
 
 // line
