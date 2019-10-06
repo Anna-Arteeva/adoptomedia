@@ -17,20 +17,18 @@
 }
 
 .header--logo {
-  padding-top: 11px;
-  height: 36px;
+  height: 30px;
+  max-width: 45vw;
 
   @include for-tablet-portrait-down {
-   // height: 50px;
-
-    padding-bottom: 1vh;
-    box-sizing: content-box;
+    margin: 1.5vh 0;
   }
 }
 
 .header-right {
   display: flex;
   justify-content: flex-end;
+  :last-child { margin-right: 0; }
 }
 
 .header--nav {
@@ -61,9 +59,7 @@
     padding-bottom: .3rem;
     margin-bottom: .5rem;
     margin-right: 1rem;
-
   }
-
 
   &:hover,
   &:focus,

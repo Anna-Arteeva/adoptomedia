@@ -29,7 +29,7 @@ h6, .h6 { font-size: $h6-font-size; }
 .lead {
   font-size: $lead-font-size;
   font-weight: $lead-font-weight;
-  line-height: $line-height-lg;
+  line-height: 2em;
 }
 
 // Type display classes
@@ -58,6 +58,10 @@ h6, .h6 { font-size: $h6-font-size; }
   color: $color-brand;
   font-family: $font-family-handwriting;
   margin-top: .5em;
+
+  @include for-tablet-portrait-down {
+    font-size: 18px;
+  }
 }
 
 //

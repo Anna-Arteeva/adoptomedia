@@ -30,13 +30,14 @@
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: $border-radius;
+  border-radius: $border-radius-lg;
   border: 4px solid rgba($color-outline, .4);
 
   &:not(:last-of-type) {
     margin-bottom: 2rem;
   }
 }
+
 
 .home-testimonial {
   @extend .section;
@@ -97,6 +98,7 @@
 .pic-left--section,
 .pic-right--section {
   display: flex;
+  justify-content: space-between;
 
   @include for-tablet-landscape-down {
     flex-direction: column;
@@ -153,6 +155,8 @@
     max-width: 750px;
     min-width: 500px;
     flex-basis: 40vw;
+    display: flex;
+    justify-content: center;
   }
 }
 

@@ -24,9 +24,9 @@ $transition-base:             all .2s ease-in-out !default;
 $transition-fade:             opacity .15s linear !default;
 $transition-collapse:         height .35s ease !default;
 
-$section-padding-v:    calc(6vh);
-$section-padding-v-sm: calc(4vh);
-$section-padding-v-xs: calc(3vh);
+$section-padding-v:    8vh;
+$section-padding-v-sm: 4vh;
+$section-padding-v-xs: 3vh;
 
 $padding-h:            calc(3.2vw + .2rem);
 
