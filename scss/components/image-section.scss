@@ -3,6 +3,11 @@
   position: relative;
   background: #fff;
 
+  &.no-shadow {
+    &:before { box-shadow: none;}
+    .screenshot {border: 0; }
+  }
+
   &:before {
     content:"";
     position:absolute;

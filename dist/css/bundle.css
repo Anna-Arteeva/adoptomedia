@@ -939,6 +939,10 @@ footer {
 .screenshot-wrapper, .product-hero--screenshot-wrapper {
   position: relative;
   background: #fff; }
+  .screenshot-wrapper.no-shadow:before, .no-shadow.product-hero--screenshot-wrapper:before {
+    box-shadow: none; }
+  .screenshot-wrapper.no-shadow .screenshot, .no-shadow.product-hero--screenshot-wrapper .screenshot {
+    border: 0; }
   .screenshot-wrapper:before, .product-hero--screenshot-wrapper:before {
     content: "";
     position: absolute;
