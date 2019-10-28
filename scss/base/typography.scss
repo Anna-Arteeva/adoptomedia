@@ -117,6 +117,18 @@ mark,
 
 .link {
   color: $color-brand;
+
+  &.no-underline {
+    color: $color-brand;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active
+  {
+    text-decoration: underline;
+  }
 }
 
 .text-centered {

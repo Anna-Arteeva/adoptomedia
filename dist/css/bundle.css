@@ -423,6 +423,11 @@ mark,
 
 .link {
   color: #3EB5E6; }
+  .link.no-underline {
+    color: #3EB5E6;
+    text-decoration: none; }
+  .link:hover, .link:focus, .link:active {
+    text-decoration: underline; }
 
 .text-centered {
   text-align: center; }
